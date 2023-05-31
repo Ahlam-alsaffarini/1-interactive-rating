@@ -1,0 +1,190 @@
+:root {
+  --White-color: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --main-color: hsl(25, 97%, 53%);
+
+  /* - Weights: 400, 700 */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: var(--Very-Dark-Blue);
+}
+.Box {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.Box-Rating,
+.Box-Finish {
+  background-color: var(--Dark-Blue);
+
+  border-radius: 15px;
+  padding: 26px;
+  margin: auto;
+  width: 300px;
+}
+
+.Box-Rating .logo {
+  background-color: hsl(213 19% 22% / 1);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+}
+.Box-Rating .logo img {
+  position: absolute;
+  width: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--White-color);
+}
+.content p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--Light-Grey);
+}
+.Box-Rating .content .rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px auto;
+}
+.Box-Rating .content .rating span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Light-Grey);
+  background-color: hsl(213 19% 22% / 1);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Box-Rating .content .rating span.active {
+  background-color: var(--Light-Grey);
+  color: var(--White-color);
+}
+.Box-Rating .content .rating span:hover {
+  color: var(--White-color);
+  background-color: var(--main-color);
+}
+.Box-Rating input {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--White-color);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.Box-Rating input:hover {
+  background-color: var(--White-color);
+  color: var(--main-color);
+}
+
+.Box-Rating {
+  display: block;
+}
+
+.Box-Finish {
+  text-align: center;
+  display: none;
+}
+.Box-Finish span.rate {
+  color: var(--main-color);
+  font-size: 11px;
+
+  display: inline-block;
+  margin-top: 12px;
+  background-color: hsl(213 19% 22% / 1);
+  padding: 6px 10px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  color: white;
+  padding: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+}
+.attribution a:visited {
+  color: var(--Medium-Grey);
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1320px;
+  }
+  .Box {
+    height: 90vh;
+  }
+  .Box-Finish,
+  .Box-Rating {
+    width: 40%;
+    padding: 45px;
+  }
+  .content p {
+    font-size: 19px;
+  }
+  .content h3 {
+    font-size: 38px;
+    margin-top: 35px;
+  }
+  .Box-Rating .content .rating {
+    margin: 30px auto;
+  }
+  .Box-Rating .logo,
+  .Box-Rating .content .rating span {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+  }
+  .Box-Rating .logo img {
+    width: 25px;
+  }
+  .Box-Rating input {
+    font-size: 25px;
+  }
+  .Box-Finish span.rate {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 9px 20px;
+  }
+  .Box-Finish .img img {
+    width: 200px;
+  }
+  .attribution {
+    font-size: 20px;
+  }
+}
