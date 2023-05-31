@@ -2,6 +2,18 @@
 </h1>
 
 ![](./screenshots/Desktop-rate.jpg)
+<br>
+
+<div align="center">
+   <a href="https://ahlam-alsaffarini.github.io/1-interactive-rating/">Demo </a>
+   <span> | </span>
+   <a href="hhttps://www.frontendmentor.io/solutions/interactive-rating-component-Ld4685UP1m">
+      Solution 
+   </a>
+   <span> | </span>
+   <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
+      Challenge </a>
+</div>
 
 <div align="center">
    Solution for a challenge from  <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank">frontendmentor.io</a>.
